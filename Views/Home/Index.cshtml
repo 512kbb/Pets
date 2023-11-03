@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Pet>
+<div class="text-center">
+    @foreach (var item in Model)
+    {
+            <h2>@item.Name</h2>
+            <p>@item.Age</p>
+            <p>@item.HasFur</p>
+        
+    }
+</div>
